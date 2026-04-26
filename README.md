@@ -8,6 +8,29 @@ The goal of this project is to clean the data, explore important trends, and cre
 
 ---
 
+## 📌 PROJECT SUMMARY
+
+This project focuses on performing Exploratory Data Analysis (EDA) on the United Nations Global Terrorism Analysis (UNGTA) dataset, which contains detailed information on terrorist incidents worldwide from 1970 to 2017. With over 180,000 recorded events, this dataset provides a rich source of structured data for analyzing patterns, trends, and characteristics of global terrorism.
+
+The primary objective of this project is to uncover meaningful insights from the dataset using data analysis and visualization techniques. By leveraging libraries such as Pandas, NumPy, Matplotlib, and Seaborn, the analysis aims to explore temporal, geographical, and operational patterns in terrorist activities.
+
+The initial phase of the project involves data preprocessing and cleaning. This includes handling missing values, correcting inconsistent entries, and selecting relevant features for analysis. Given the large size and complexity of the dataset, preprocessing plays a crucial role in ensuring accurate and efficient analysis.
+
+Following data cleaning, the project explores time-based trends in terrorism. This includes analyzing how the frequency of attacks has changed over the years and identifying periods of significant increase or decline. Such analysis helps in understanding the evolution of global terrorism and detecting any historical patterns or anomalies.
+
+The project also emphasizes geographical analysis, identifying the most affected regions, countries, and cities. By visualizing the distribution of attacks across different locations, the analysis highlights hotspots of terrorist activity and provides insights into regional vulnerabilities. This can be further extended to compare terrorism intensity across continents and regions.
+
+Another key aspect of the analysis is examining attack characteristics, such as attack types, weapon types, and target categories. This helps in understanding the most commonly used methods and the typical targets of terrorist organizations. For example, insights can be drawn about whether bombings, armed assaults, or kidnappings are more prevalent, and which sectors (e.g., civilians, military, government) are most frequently targeted.
+
+The project also includes an impact assessment, analyzing casualties in terms of the number of people killed and wounded. This provides a deeper understanding of the severity of attacks and helps identify the most destructive incidents. Additionally, relationships between different variables—such as attack type and casualty count—are explored to uncover deeper patterns.
+
+To effectively communicate findings, the project utilizes at least five different visualizations, including bar charts, line graphs, heatmaps, and distribution plots. These visual tools play a vital role in simplifying complex data and making insights more interpretable.
+
+Overall, this EDA project provides a comprehensive overview of global terrorism trends and patterns. It demonstrates how data analysis techniques can be applied to large real-world datasets to extract actionable insights. The findings from this analysis can contribute to a better understanding of terrorism dynamics and may support policymakers, researchers, and security agencies in making informed decisions.
+
+
+---
+
 ## 🎯 Objectives
 
 * 📂 Load and inspect the dataset
@@ -17,6 +40,11 @@ The goal of this project is to clean the data, explore important trends, and cre
 * 📊 Perform exploratory data analysis
 * 📈 Visualize key trends using charts
 * 💡 Generate insights that are useful for stakeholders
+* 🧹Analyze terrorism trends from 1970–2017
+* 📊 Identify most affected countries and regions
+* 📊Understand attack types and weapons used
+* ➕  Study casualties and impact
+* 📈Generate insights useful for stakeholders
 
 ---
 
