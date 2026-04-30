@@ -2,49 +2,36 @@
 
 ## 📌 Project Overview
 
-This project analyzes the Global Terrorism dataset to study patterns in terrorist incidents around the world. The dataset contains event details such as year, country, region, attack type, target type, weapon type, casualties, and other related attributes.
+This project analyzes the Global Terrorism dataset to study patterns in terrorist incidents worldwide. The dataset contains detailed information about events including year, country, attack type, target, weapon, and casualties.
 
-The goal of this project is to clean the data, explore important trends, and create meaningful visualizations that help understand terrorism patterns over time and across regions.
+The main goal is to perform **data cleaning, exploratory analysis, hypothesis testing, and machine learning modeling** to extract meaningful insights and predict patterns in terrorist activities.
 
 ---
 
 ## 📌 PROJECT SUMMARY
 
-This project focuses on performing Exploratory Data Analysis (EDA) on the United Nations Global Terrorism Analysis (UNGTA) dataset, which contains detailed information on terrorist incidents worldwide from 1970 to 2017. With over 180,000 recorded events, this dataset provides a rich source of structured data for analyzing patterns, trends, and characteristics of global terrorism.
+This project performs Exploratory Data Analysis (EDA) on a dataset containing over **180,000 terrorist incidents (1970–2017)**.
 
-The primary objective of this project is to uncover meaningful insights from the dataset using data analysis and visualization techniques. By leveraging libraries such as Pandas, NumPy, Matplotlib, and Seaborn, the analysis aims to explore temporal, geographical, and operational patterns in terrorist activities.
+The workflow includes:
 
-The initial phase of the project involves data preprocessing and cleaning. This includes handling missing values, correcting inconsistent entries, and selecting relevant features for analysis. Given the large size and complexity of the dataset, preprocessing plays a crucial role in ensuring accurate and efficient analysis.
+* Data preprocessing & cleaning
+* Visualization of trends and patterns
+* Statistical hypothesis testing
+* Machine learning model building
 
-Following data cleaning, the project explores time-based trends in terrorism. This includes analyzing how the frequency of attacks has changed over the years and identifying periods of significant increase or decline. Such analysis helps in understanding the evolution of global terrorism and detecting any historical patterns or anomalies.
-
-The project also emphasizes geographical analysis, identifying the most affected regions, countries, and cities. By visualizing the distribution of attacks across different locations, the analysis highlights hotspots of terrorist activity and provides insights into regional vulnerabilities. This can be further extended to compare terrorism intensity across continents and regions.
-
-Another key aspect of the analysis is examining attack characteristics, such as attack types, weapon types, and target categories. This helps in understanding the most commonly used methods and the typical targets of terrorist organizations. For example, insights can be drawn about whether bombings, armed assaults, or kidnappings are more prevalent, and which sectors (e.g., civilians, military, government) are most frequently targeted.
-
-The project also includes an impact assessment, analyzing casualties in terms of the number of people killed and wounded. This provides a deeper understanding of the severity of attacks and helps identify the most destructive incidents. Additionally, relationships between different variables—such as attack type and casualty count—are explored to uncover deeper patterns.
-
-To effectively communicate findings, the project utilizes at least five different visualizations, including bar charts, line graphs, heatmaps, and distribution plots. These visual tools play a vital role in simplifying complex data and making insights more interpretable.
-
-Overall, this EDA project provides a comprehensive overview of global terrorism trends and patterns. It demonstrates how data analysis techniques can be applied to large real-world datasets to extract actionable insights. The findings from this analysis can contribute to a better understanding of terrorism dynamics and may support policymakers, researchers, and security agencies in making informed decisions.
-
+The project aims to transform raw data into **actionable insights for security and policy decision-making**.
 
 ---
 
 ## 🎯 Objectives
 
-* 📂 Load and inspect the dataset
-* 🧹 Handle missing values and duplicate rows
-* 🔄 Clean incorrect data types
-* ➕ Create new useful columns such as casualties
-* 📊 Perform exploratory data analysis
-* 📈 Visualize key trends using charts
-* 💡 Generate insights that are useful for stakeholders
-* 🧹Analyze terrorism trends from 1970–2017
-* 📊 Identify most affected countries and regions
-* 📊Understand attack types and weapons used
-* ➕  Study casualties and impact
-* 📈Generate insights useful for stakeholders
+* 📂 Load and inspect dataset
+* 🧹 Clean missing and inconsistent data
+* ➕ Create new features (casualties, decade, etc.)
+* 📊 Perform EDA and visualization
+* 🔬 Apply hypothesis testing
+* 🤖 Build machine learning models
+* 💡 Generate insights for stakeholders
 
 ---
 
@@ -55,32 +42,29 @@ Overall, this EDA project provides a comprehensive overview of global terrorism 
 * 🔢 NumPy
 * 📉 Matplotlib
 * 🎨 Seaborn
+* 📊 SciPy
+* 🤖 Scikit-learn
 
 ---
 
 ## 🧼 Data Cleaning Steps
 
-The following cleaning steps were performed:
-
 * 🗑️ Removed duplicate rows
-* ⚠️ Handled missing values in important columns
-* 🔧 Converted incorrect data types into proper numeric or text formats
-* ➕ Created a new column called `casualties` using `nkill + nwound`
-* 📅 Created additional helpful columns such as `year`, `decade`, and `month_name`
+* ⚠️ Handled missing values
+* 🔧 Converted incorrect data types
+* ➕ Created `casualties = nkill + nwound`
+* 📅 Extracted `year`, `decade`, `month_name`
 
 ---
 
 ## 📌 Key Columns Used
 
 * 📅 `iyear`
-* 📆 `imonth`
-* 📍 `iday`
 * 🌎 `country_txt`
 * 🗺️ `region_txt`
 * 🏙️ `city`
 * 💣 `attacktype1_txt`
 * 🎯 `targtype1_txt`
-* 👥 `gname`
 * 🔫 `weaptype1_txt`
 * ☠️ `nkill`
 * 🤕 `nwound`
@@ -92,52 +76,167 @@ The following cleaning steps were performed:
 
 ## 📊 Exploratory Data Analysis
 
-The analysis focuses on:
+The analysis includes:
 
-* 📈 Terrorist attacks by year
-* 🌍 Countries with the highest number of attacks
-* 💣 Most common attack types
-* 🎯 Most affected target types
+* 📈 Attacks over time
+* 🌍 Most affected countries & regions
+* 💣 Attack type distribution
+* 🎯 Target analysis
 * ☠️ Casualty distribution
-* 📦 Outliers in attack impact
-* 🔗 Correlation between numerical variables
+* 📦 Outlier detection
+* 🔥 Correlation heatmap
 
 ---
 
 ## 📉 Visualizations
 
-The project includes the following visualizations:
-
-1. 📈 Line chart for attacks by year
-2. 📊 Bar chart for top affected countries
-3. 💣 Bar chart for attack type frequency
-4. 🥧 Pie chart for target type distribution
-5. 📉 Histogram for casualties
-6. 📦 Box plot for outliers in casualties
-7. 🔥 Heatmap for numerical correlations
+1. 📈 Line chart (attacks by year)
+2. 📊 Bar chart (top countries)
+3. 💣 Attack type frequency
+4. 🥧 Target distribution
+5. 📉 Casualty histogram
+6. 📦 Boxplot (outliers)
+7. 🔥 Heatmap
 
 ---
 
-## 💡 Key Insights
+# 🔬 Hypothesis Testing
 
-* 🌍 Terrorist attacks are not evenly distributed across time or geography
-* 📍 Some countries and regions experience significantly more attacks than others
-* 💣 Bombing and explosive attacks are often common
-* 🎯 Civilian and public targets are frequently affected
-* 📊 Casualty values are highly skewed, showing that a small number of events cause large losses
-* 🧠 The dataset can help identify high-risk areas and support security planning
+## 📊 Hypothesis 1: Region vs Attack Frequency
+
+* **H₀:** Terrorist attacks are equally distributed across regions
+* **H₁:** Terrorist attacks are not equally distributed across regions
+
+👉 **Test Used:** Chi-Square Test
+
+👉 **Insight:**
+Shows whether certain regions are significantly more affected than others.
+
+---
+
+## 📊 Hypothesis 2: Attack Type vs Success
+
+* **H₀:** Attack success is independent of attack type
+* **H₁:** Attack success depends on attack type
+
+👉 **Test Used:** Chi-Square Test
+
+👉 **Insight:**
+Determines if some attack types are more likely to succeed.
+
+---
+
+## 📊 Hypothesis 3: Casualties Relationship
+
+* **H₀:** No correlation between number of killed and wounded
+* **H₁:** Significant correlation exists
+
+👉 **Test Used:** Pearson Correlation
+
+👉 **Insight:**
+Helps understand whether deadly attacks also tend to injure more people.
+
+---
+
+# 🤖 Machine Learning Implementation
+
+## 🎯 Problem Statements
+
+### 1️⃣ Classification Task
+
+Predict whether an attack is **successful**
+
+* Target: `success`
+
+---
+
+### 2️⃣ Regression Task
+
+Predict **casualties**
+
+* Target: `casualties`
+
+---
+
+## ⚙️ Algorithms Used (6 Models)
+
+### 🔹 1. Logistic Regression
+
+* Used for classification
+* Baseline model
+
+---
+
+### 🔹 2. Decision Tree
+
+* Captures non-linear relationships
+* Easy to interpret
+
+---
+
+### 🔹 3. Random Forest
+
+* Ensemble method
+* High accuracy & robust
+
+---
+
+### 🔹 4. K-Nearest Neighbors (KNN)
+
+* Instance-based learning
+* Works on similarity
+
+---
+
+### 🔹 5. Naive Bayes
+
+* Fast and efficient
+* Works well with categorical data
+
+---
+
+### 🔹 6. Support Vector Machine
+
+* Used for predicting casualties
+* Simple regression baseline
+
+---
+
+## 📊 Model Evaluation
+
+### ✔️ Classification Metrics:
+
+* Accuracy
+* Precision
+* Recall
+* F1 Score
+* Confusion Matrix
+
+### ✔️ Regression Metrics:
+
+* Mean Absolute Error (MAE)
+* Mean Squared Error (MSE)
+* R² Score
+
+---
+
+## 📈 Key ML Insights
+
+* 🌍 Region and attack type strongly influence success
+* 💣 Weapon type impacts outcome probability
+* ☠️ Casualty prediction is challenging due to outliers
+* 🌲 Random Forest gives best classification performance
+* 📊 Linear Regression provides baseline for casualty prediction
 
 ---
 
 ## 👥 Stakeholder Usefulness
 
-This project is useful for:
-
-* 🏛️ Governments planning counter-terrorism strategies
-* 🛡️ Security agencies monitoring risk patterns
-* 🎓 Researchers studying terrorism trends
-* 📜 Policy makers allocating resources
-* 🌐 International organizations evaluating regional threats
+* 🏛️ Governments
+* 🛡️ Security agencies
+* 🎓 Researchers
+* 📜 Policy makers
+* 🌐 International organizations
 
 ---
 
@@ -155,20 +254,25 @@ project-folder/
 
 ## 🚀 How to Run
 
-1. 📥 Clone this repository
-2. 💻 Open the notebook in Google Colab or Jupyter Notebook
-3. 📦 Install required libraries if needed
-4. ▶️ Run the notebook cells step by step
-5. 👀 View the cleaned dataset, charts, and insights
+1. 📥 Clone repository
+2. 💻 Open in Jupyter/Colab
+3. 📦 Install dependencies
+4. ▶️ Run all cells
+5. 📊 View insights & models
 
 ---
 
 ## 🏁 Conclusion
 
-This project provides a structured analysis of global terrorism data. It shows how data cleaning, exploratory analysis, and visualization can uncover useful patterns and support better decision-making.
+This project demonstrates how **EDA, statistical testing, and machine learning** can be combined to analyze complex real-world data like global terrorism.
+
+It provides valuable insights into patterns, risks, and predictive factors that can support **data-driven decision-making in security and policy planning**.
 
 ---
 
 ## ✍️ Author
 
 **Adiba Ansari**
+
+---
+
